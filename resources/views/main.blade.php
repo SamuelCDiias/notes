@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Main</title>
-</head>
-<body>
+@extends('layout.main_layout')
+@section('content')
+<h1>Hello View and Blade 1 </h1>
+<hr>
+<h2>MAIN</h2>
+<hr>
+<h3>The value is: {{ $value }}</h3>
+@endsection
 
-    <h1>Hello View and Blade</h1>
-    <hr>
-    <h3>The value is: {{ $value }}</h3>
-</body>
-</html>
