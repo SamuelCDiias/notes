@@ -14,7 +14,7 @@ class MainController extends Controller
     return view('home');
    }
 
-   public function newNotes()
+   public function newNote()
    {
     echo 'ESTOU CRIANDO UMA NOTA';
    }

@@ -15,9 +15,9 @@ route::middleware([CheckIsNotLogged::class])->group(function(){
 
 // AUTH ROUTES - USER LOGGED
 route::middleware([CheckIsLogged::class])->group(function(){
-    route::get('/', [MainController::class, 'index']);
-    route::get('/newNote', [MainController::class, 'newNote']);
-    route::get('/logout', [AuthController::class, 'logout']);
+    route::get('/', [MainController::class, 'index'])->name('home');
+    route::get('/newNote', [MainController::class, 'newNote'])->name('new');
+    route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 });
 
 
