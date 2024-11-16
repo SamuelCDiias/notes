@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Services\Operations;
+use Illuminate\Support\Facades\Request;
 
 class MainController extends Controller
 {
@@ -21,7 +22,12 @@ class MainController extends Controller
 
    public function newNote()
    {
-    echo 'ESTOU CRIANDO UMA NOTA';
+    return view('new_note');
+   }
+
+   public function newNoteSubmit(Request $request)
+   {
+    echo "I'm creating a new note";
    }
 
    public function editNote($id)
