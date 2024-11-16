@@ -136,8 +136,14 @@ class MainController extends Controller
         // $note->delete();
 
         // soft delete
-        $note->deleted_at = date('Y-m-d H:i:s');
-        $note->save();
+        // $note->deleted_at = date('Y-m-d H:i:s');
+        // $note->save();
+
+        //soft using model
+        $note->delete();
+
+        // hard using model;
+        // $note->forceDelete();
 
         // redirect home
         return redirect()->route('home');
