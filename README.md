@@ -5,7 +5,6 @@ Este é um projeto simples de gerenciamento de notas desenvolvido com [Laravel](
 ## Tecnologias Utilizadas
 
 - [Laravel 11](w)
-- [Livewire](w)
 - [Bootstrap](w)
 - [MySQL](w)
 
